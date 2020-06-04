@@ -1,0 +1,191 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-06-04T01:25:06.662Z",
+  "__export_source": "insomnia.desktop.app:v7.1.1",
+  "resources": [
+    {
+      "_id": "req_4225bcb7d8074f98a602b549324133b3",
+      "authentication": {},
+      "body": {},
+      "created": 1591137276542,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1591137276543,
+      "method": "GET",
+      "modified": 1591225277911,
+      "name": "Listar itens",
+      "parameters": [],
+      "parentId": "fld_4fe9776bce934246b7fee6508a0fbaf3",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/items",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_4fe9776bce934246b7fee6508a0fbaf3",
+      "created": 1591137265530,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1591137265530,
+      "modified": 1591137265530,
+      "name": "Server",
+      "parentId": "wrk_e78b9bd0b9bb45c28f34d521d54fe20d",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_e78b9bd0b9bb45c28f34d521d54fe20d",
+      "created": 1591137145720,
+      "description": "",
+      "modified": 1591137145720,
+      "name": "NLW",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_58a7462f3409476f9785dbcf7fd89ed3",
+      "authentication": {},
+      "body": {},
+      "created": 1591230012698,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1591137276518,
+      "method": "GET",
+      "modified": 1591233034504,
+      "name": "Listar ponto especifico",
+      "parameters": [],
+      "parentId": "fld_4fe9776bce934246b7fee6508a0fbaf3",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/points/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_20312d2ec34f4bf7987de015c278369e",
+      "authentication": {},
+      "body": {},
+      "created": 1591232381489,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1591137276505.5,
+      "method": "GET",
+      "modified": 1591232572077,
+      "name": "Listar pontos filtrados",
+      "parameters": [
+        {
+          "description": "",
+          "disabled": false,
+          "id": "pair_e6b7c4c35aa54eb2841c05238c894975",
+          "name": "city",
+          "value": "Rio do Sul"
+        },
+        {
+          "description": "",
+          "id": "pair_4c4d3607d80e49cab8bbe61fd2079f34",
+          "name": "uf",
+          "value": "SC"
+        },
+        {
+          "description": "",
+          "id": "pair_bb97e6d752fc40c9b88a614fdeeba729",
+          "name": "items",
+          "value": "1,2"
+        }
+      ],
+      "parentId": "fld_4fe9776bce934246b7fee6508a0fbaf3",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/points",
+      "_type": "request"
+    },
+    {
+      "_id": "req_74c666c63e604cbd913922870b565b88",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Mercado Imperatriz\",\n\t\"email\": \"contato@imperatriz.com.br\",\n\t\"whatsapp\": \"313344556677\",\n\t\"latitude\": -46.81273213,\n\t\"longitude\": -35.19238112,\n\t\"city\": \"Rio do Sul\",\n\t\"uf\": \"SC\",\n\t\"items\": [\n\t\t1,\n\t\t2,\n\t\t6\n\t]\n}"
+      },
+      "created": 1591137306253,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_b39a5133c6594316a48e566d740e943f",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1591137276493,
+      "method": "POST",
+      "modified": 1591233722263,
+      "name": "Criar ponto de coleta",
+      "parameters": [],
+      "parentId": "fld_4fe9776bce934246b7fee6508a0fbaf3",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/points",
+      "_type": "request"
+    },
+    {
+      "_id": "env_8e7a3129bd2c88893781aff891efd1f1191f21d9",
+      "color": null,
+      "created": 1591137145762,
+      "data": {},
+      "dataPropertyOrder": {},
+      "isPrivate": false,
+      "metaSortKey": 1591137145762,
+      "modified": 1591137236084,
+      "name": "Base Environment",
+      "parentId": "wrk_e78b9bd0b9bb45c28f34d521d54fe20d",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_8e7a3129bd2c88893781aff891efd1f1191f21d9",
+      "cookies": [],
+      "created": 1591137145768,
+      "modified": 1591137145768,
+      "name": "Default Jar",
+      "parentId": "wrk_e78b9bd0b9bb45c28f34d521d54fe20d",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "env_f6180027afdc42b99765a28049166424",
+      "color": "#6348cd",
+      "created": 1591137216069,
+      "data": {
+        "base_url": "localhost:3333"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url"
+        ]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1591137216069,
+      "modified": 1591137248389,
+      "name": "dev",
+      "parentId": "env_8e7a3129bd2c88893781aff891efd1f1191f21d9",
+      "_type": "environment"
+    }
+  ]
+}
